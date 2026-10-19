@@ -1,4 +1,4 @@
-#  Manogna.OS
+#  MY PORTFOLIO
 
  **A little creativity, a little code, and a whole lot of me!**
 
