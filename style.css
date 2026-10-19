@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+*{box-sizing:border-box}html,body,#root{margin:0;min-height:100%;font-family:'DM Sans',sans-serif}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #b57c72;outline-offset:3px}.desktop{height:100vh;min-height:650px;overflow:hidden;position:relative;color:#3d3a33;background:radial-gradient(ellipse at 48% 30%,#faf7ed 0%,#f0eadc 52%,#e6dfd1 100%)}.grain{position:absolute;inset:0;pointer-events:none;opacity:.23;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E")}.topbar{position:absolute;z-index:5;top:25px;left:5%;right:5%;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.1em}.brand{font-weight:700}.brand-version{opacity:.4}.status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#8ba883;margin-right:7px}.top-note{font-style:italic;letter-spacing:0;color:#2f2e2d}.background-word{margin-left: 70px;position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);font:italic clamp(130px,25vw,350px)/1 'Playfair Display',serif;color:#baa38570;user-select:none}.center-stage{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);width:min(43vw,420px);z-index:2;text-align:center;pointer-events:none}.photo-wrap{height:min(48vh,440px);min-height:265px;display:flex;align-items:end;justify-content:center}.photo-wrap img{height:100%;max-width:100%;object-fit:contain;filter:drop-shadow(12px 15px 18px #ec8f1e2b)}.photo-placeholder{width:65%;height:88%;border-radius:48% 48% 14px 14px;background:linear-gradient(150deg,#d7c3ae,#c7aa96);border:7px solid #f8f1e5;box-shadow:10px 16px 40px #7c69583d;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-4deg);color:#fff8ec}.photo-placeholder>span{font-size:76px}.photo-placeholder p{font:italic 30px/1.15 'Playfair Display',serif;margin:8px}.photo-placeholder small{font-size:10px}.center-caption{margin-top:8px}.center-caption>span,.eyebrow{font-size:10px;letter-spacing:.23em;font-weight:700;color:#9e8279}.center-caption h1{font:italic clamp(27px,3.7vw,51px)/1.2 'Playfair Display',serif;margin:9px 0 5px}.center-caption h1 i{font-style:normal;color:#c88b79}.center-caption p{font-size:12px;color:#8e8378}.folders{position:absolute;inset:0;z-index:4;pointer-events:none}.folder{position:absolute;pointer-events:auto;border:0;background:transparent;display:flex;align-items:center;flex-direction:column;cursor:pointer;width:120px;transition:filter .2s;gap:3px}.folder:hover{filter:brightness(1.06) drop-shadow(0 8px 8px #5a4d402b)}.folder-icon{width:96px;height:82px;filter:drop-shadow(3px 7px 5px #554c3c27)}.folder-label{background:#ffffffa8;border-radius:7px;padding:4px 7px;font-size:12px;white-space:nowrap}.sparkle{position:absolute;color:#fff;opacity:.85;animation:float 5s ease-in-out infinite alternate;pointer-events:none}.s1{top:14%;left:20%;font-size:20px}.s2{top:67%;left:58%;font-size:24px;animation-delay:1.5s}.s3{top:25%;left:63%;font-size:16px;animation-delay:2s}@keyframes float{to{transform:translateY(-25px) rotate(35deg)}}.bottom-dock{position:absolute;bottom:23px;left:50%;transform:translateX(-50%);display:flex;gap:24px;padding:14px 22px;background:#ffffff8a;backdrop-filter:blur(12px);border:1px solid #fff;border-radius:19px;font-size:12px;z-index:5;white-space:nowrap;box-shadow:0 7px 25px #74655516}.app-window{position:absolute;width:min(620px,calc(100vw - 32px));max-height:min(76vh,680px);display:flex;flex-direction:column;background:#fffcf7;border:1px solid #fff;border-radius:17px;box-shadow:0 24px 80px #51463755;overflow:hidden}.window-bar{height:45px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;background:#f3eadf;border-bottom:1px solid #e6d9cb;padding:0 17px;touch-action:none;cursor:grab;user-select:none}.window-bar:active{cursor:grabbing}.window-bar strong{font-size:12px;font-weight:600}.traffic{display:flex;gap:7px}.traffic>*{display:block;width:12px;height:12px;border:0;border-radius:50%;background:#e7c776;padding:0}.traffic .traffic-close{background:#e58e88;cursor:pointer}.traffic>span:last-child{background:#a4c5a0}.window-symbol{color:#b9a69a}.window-body{padding:29px 34px 34px;overflow:auto}.window-body h2{font:italic 32px 'Playfair Display',serif;margin:8px 0 18px}.window-body h2 span{color:#c88c7b}.window-body p{font-size:14px;line-height:1.8;color:#6e665e}.info-strip{display:flex;gap:10px;align-items:center;margin-top:25px;padding:14px;border-radius:12px;background:#f2e9dd;font-size:13px}.projects{display:grid;gap:12px;margin:18px 0}.project{display:grid;grid-template-columns:36px 1fr;gap:14px;padding:16px;border:1px solid #e8dfd5;border-radius:14px;background:#fff}.project-number{font:italic 23px 'Playfair Display',serif;color:#d4aa94}.project-kind{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#ae8b7a}.project h3{margin:6px 0;font-size:16px}.project p{margin:5px 0 10px;font-size:12px;line-height:1.6}.project small{font-size:11px;color:#8a8176}.project a,.text-link{display:flex;align-items:center;gap:5px;color:#a86f60;font-size:12px;margin-top:11px;text-decoration:none;font-weight:700}.skill-row{border-top:1px solid #e9ded2;padding:16px 0}.skill-row h3{font-size:13px;margin:0 0 10px}.skill{display:inline-block;padding:8px 11px;border-radius:9px;background:#f0e8dd;font-size:12px;margin:0 6px 7px 0}.achievements{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.achievement{padding:18px;border-radius:14px;background:#f4eadd;display:flex;flex-direction:column;gap:7px}.achievement strong{font:italic 23px 'Playfair Display',serif}.achievement span{font-size:12px}.hobby-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.hobby-grid>div{background:#f4eadd;border-radius:13px;padding:14px;display:flex;flex-direction:column;gap:7px;font-size:26px}.hobby-grid b{font-size:12px}.hobby-grid small{font-size:11px}.note{font-style:italic}.social-links{display:grid;gap:11px}.social-links a{display:flex;align-items:center;gap:12px;border:1px solid #e9dfd2;border-radius:12px;padding:15px;color:#4d443e;text-decoration:none}.social-links a svg:last-child{margin-left:auto}.social-links a:hover{background:#f5ebdf}.resume-actions{display:flex;gap:10px;margin:20px 0}.resume-actions a{display:inline-flex;gap:8px;align-items:center;padding:11px 16px;border-radius:10px;text-decoration:none;font-size:13px}.primary-link{background:#b78979;color:white}.secondary-link{border:1px solid #d7c6b7;color:#5b4d43}.pdf-frame{width:100%;height:320px;border:1px solid #e5dcd1;border-radius:8px}@media(max-width:650px){.desktop{min-height:690px;height:100dvh}.topbar{top:20px}.top-note{font-size:10px}.center-stage{width:70vw;top:48%}.photo-wrap{height:35vh;min-height:210px}.center-caption h1{font-size:30px}.center-caption>span{font-size:8px}.folder{width:85px}.folder-icon{width:68px;height:59px}.folder-label{font-size:10px}.folders .folder:nth-child(1){left:15%!important;top:23%!important}.folders .folder:nth-child(2){left:51%!important;top:16%!important}.folders .folder:nth-child(3){left:85%!important;top:27%!important}.folders .folder:nth-child(4){left:15%!important;top:59%!important}.folders .folder:nth-child(5){left:85%!important;top:59%!important}.folders .folder:nth-child(6){left:26%!important;top:80%!important}.folders .folder:nth-child(7){left:76%!important;top:80%!important}.bottom-dock{bottom:12px;font-size:10px;gap:13px}.app-window{left:12px!important;top:80px!important;width:calc(100vw - 24px);max-height:75dvh}.window-body{padding:23px 20px}.window-body h2{font-size:27px}.hobby-grid{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.hero-photo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(42%, 380px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 20px rgba(70, 55, 40, 0.15));
+}
+
+@media (max-width: 600px) {
+  .hero-photo {
+    width: 65%;
+  }
+}
+
+/* ===== MANOGNA PORTFOLIO CUSTOMIZATION ===== */
+
+/* Bigger folders */
+.folder {
+  width: 150px !important;
+  min-height: 145px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  transform-origin: center;
+}
+
+/* Larger folder icons */
+.folder-icon {
+  width: 125px !important;
+  height: 105px !important;
+  filter: drop-shadow(0 8px 8px rgba(70, 55, 40, 0.12));
+}
+
+/* Bigger folder names */
+.folder-label {
+  font-size: 16px !important;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 3px 10px rgba(80, 65, 50, 0.06);
+}
+
+/* Keep the center composition positioned correctly */
+.center-stage {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Smaller photo */
+.photo-wrap {
+  width: 190px !important;
+  max-width: 38vw;
+  height: auto !important;
+  background: transparent !important;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+/* Blend photo edges into the background */
+.photo-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 28px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 74% 78% at center,
+    black 54%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 74% 78% at center,
+    black 54%,
+    transparent 100%
+  );
+}
+
+/* Name and subtitle */
+.center-caption {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  z-index: 3;
+}
+
+.center-caption h1 {
+  font-size: clamp(35px, 4.5vw, 64px);
+}
+
+/* Branding */
+.brand {
+  font-size: 16px !important;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Prevent folders from appearing behind open windows */
+.app-window {
+  z-index: 30;
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  .folder {
+    width: 100px !important;
+    min-height: 105px;
+  }
+
+  .folder-icon {
+    width: 80px !important;
+    height: 70px !important;
+  }
+
+  .folder-label {
+    font-size: 12px !important;
+    white-space: normal;
+  }
+
+  .photo-wrap {
+    width: 145px !important;
+  }
+
+  .center-caption h1 {
+    font-size: 32px;
+  }
+}
+
+/* Accessibility: disable floating for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  .folder {
+    animation: none !important;
+  }
+}
+
+/* =====================================
+   MANOGNA — AVATAR AND FOLDER LAYOUT
+   ===================================== */
+
+/* Main avatar positioning */
+.center-stage {
+  position: absolute !important;
+  left: 50% !important;
+  top: 45% !important;
+  transform: translate(-50%, -50%) !important;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Bigger avatar */
+.photo-wrap {
+  width: 340px !important;
+  max-width: 38vw !important;
+  height: auto !important;
+
+  background: transparent !important;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+/* Display the complete avatar */
+.photo-wrap img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+
+  object-fit: contain;
+  border-radius: 24px;
+
+  /* Softer edges for the cream background */
+  -webkit-mask-image: radial-gradient(
+    ellipse 85% 85% at center,
+    black 67%,
+    transparent 100%
+  );
+
+  mask-image: radial-gradient(
+    ellipse 85% 85% at center,
+    black 67%,
+    transparent 100%
+  );
+}
+
+/* Keep the name beneath the avatar */
+.center-caption {
+  position: relative;
+  margin-top: 14px !important;
+  text-align: center;
+  z-index: 3;
+}
+
+/* Keep the name prominent */
+.center-caption h1 {
+  font-size: clamp(38px, 4.5vw, 65px);
+  white-space: nowrap;
+}
+
+/* Folder dimensions */
+.folder {
+  width: 150px !important;
+  min-height: 140px;
+  z-index: 5;
+}
+
+/* Folder icons */
+.folder-icon {
+  width: 125px !important;
+  height: 105px !important;
+}
+
+/* Folder labels */
+.folder-label {
+  font-size: 16px !important;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 700px) {
+  .center-stage {
+    top: 42% !important;
+  }
+
+  .photo-wrap {
+    width: 220px !important;
+    max-width: 55vw !important;
+  }
+
+  .center-caption h1 {
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  .folder {
+    width: 95px !important;
+    min-height: 100px;
+  }
+
+  .folder-icon {
+    width: 78px !important;
+    height: 68px !important;
+  }
+
+  .folder-label {
+    font-size: 11px !important;
+    white-space: normal;
+  }
+}
+.folder-glow .folder-icon {
+  filter:
+    drop-shadow(0 0 15px rgba(255, 200, 100, 0.95))
+    drop-shadow(0 0 30px rgba(255, 190, 90, 0.7)) !important;
+  animation: folderGlow 2s ease-in-out infinite;
+}
+
+.folder-glow .folder-label {
+  background: #fff5d6 !important;
+  box-shadow: 0 0 20px rgba(255, 195, 90, 0.65);
+}
+
+@keyframes folderGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px rgba(255, 200, 100, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 190, 90, 1));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .folder-glow .folder-icon {
+    animation: none;
+  }
+}
+
+/* ===== COMPACT SINGLE-SCREEN PORTFOLIO ===== */
+
+.desktop {
+  position: relative;
+  height: 100dvh !important;
+  min-height: 650px !important;
+  overflow: hidden !important;
+}
+
+/* Keep the center avatar prominent */
+.center-stage {
+  top: 43% !important;
+}
+
+/* Folder sizes */
+.folder {
+  width: 115px !important;
+  min-height: 105px !important;
+  gap: 4px !important;
+}
+
+.folder-icon {
+  width: 100px !important;
+  height: 80px !important;
+}
+
+.folder-label {
+  font-size: 14px !important;
+  padding: 5px 9px !important;
+  white-space: nowrap;
+}
+
+/* Move dock away from bottom folders */
+.bottom-dock {
+  bottom: 12px !important;
+  z-index: 6;
+}
+
+/* Smaller screens */
+@media (max-height: 800px) and (min-width: 701px) {
+  .folder {
+    width: 105px !important;
+    min-height: 95px !important;
+  }
+
+  .folder-icon {
+    width: 88px !important;
+    height: 72px !important;
+  }
+
+  .folder-label {
+    font-size: 12px !important;
+  }
+
+  .photo-wrap {
+    width: 290px !important;
+  }
+}
+
+/* Move center text slightly to the right */
+
+.center-caption {
+  position: relative;
+  left: 55px !important;
+  text-align: center;
+}
+
